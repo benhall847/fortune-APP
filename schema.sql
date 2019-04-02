@@ -1,7 +1,5 @@
-create table cars (
+create table fortune_app (
     id serial primary key,
-    make text,
-    model text,
-    year text
+    fortunes text
 )
 ;

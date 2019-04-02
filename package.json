@@ -1,18 +1,19 @@
 {
-  "name": "car-app",
+  "name": "fortune-app",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "db:create": "createdb car-app",
-    "db:init": "psql -f schema.sql car-app && psql -f seed.sql car-app",
-    "db:destroy": "dropdb car-app",
+    "dev": "nodemon index.js",
+    "db:create": "createdb fortune-app",
+    "db:init": "psql -f schema.sql fortune-app && psql -f seed.sql fortune-app",
+    "db:destroy": "dropdb fortune-app",
     "db:reset": "npm run db:destroy && npm run db:create && npm run db:init",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.16.4",
     "nodemon": "^1.18.10",
     "pg-promise": "^8.6.4"
   },
@@ -24,11 +25,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benhall847/car-order-DB-node-app.git"
+    "url": "git+https://github.com/benhall847/fortune-order-DB-node-app.git"
   },
   "bugs": {
-    "url": "https://github.com/benhall847/car-order-DB-node-app/issues"
+    "url": "https://github.com/benhall847/fortune-order-DB-node-app/issues"
   },
-  "homepage": "https://github.com/benhall847/car-order-DB-node-app#readme",
+  "homepage": "https://github.com/benhall847/fortune-order-DB-node-app#readme",
   "description": ""
 }
